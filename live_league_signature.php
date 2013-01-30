@@ -120,10 +120,6 @@ if ( isset( $data["result"]["games"] ) && !empty( $data["result"]["games"] ) )
 
 		$canvas->drawImage( $liveBoxDraw );
 
-		$canvas->setImageFormat( "gif" );
-		$canvas->setImageDelay( 100 );
-		$gif->addImage( $canvas );
-
 		// Draw some text showing it's a live game
 		$fontColorRed = new ImagickPixel( "#FF1111" );
 
@@ -140,7 +136,7 @@ if ( isset( $data["result"]["games"] ) && !empty( $data["result"]["games"] ) )
 
 
 		$canvas->setImageFormat( "gif" );
-		$canvas->setImageDelay( 250 );
+		$canvas->setImageDelay( 350 );
 		$gif->addImage( $canvas );
 	}
 }
