@@ -48,7 +48,7 @@ $gif->setFormat( "gif" );
 $leagueContents = $mc->get( "league_contents" );
 if ( $leagueContents === false )
 {
-	$leagueContents = file_get_contents( "https://api.steampowered.com/IDOTA2Match_570/GetLeagueListing/V001/?language=en&key=" . WEBAPIKEY );
+	$leagueContents = file_get_contents( "http://api.steampowered.com/IDOTA2Match_570/GetLeagueListing/V001/?language=en&key=" . WEBAPIKEY );
 	$mc->set( "league_contents", $leagueContents, 60 * 60 * 1 /* 1 hour */ );
 }
 $data = json_decode( $leagueContents, true );
@@ -67,7 +67,7 @@ if ( isset( $data["result"]["leagues"] ) )
 $liveGamesContents = $mc->get( "live_games_contents" );
 if ( $liveGamesContents === false )
 {
-	$liveGamesContents = file_get_contents( "https://api.steampowered.com/IDOTA2Match_570/GetLiveLeagueGames/V001/?language=en&key=" . WEBAPIKEY );
+	$liveGamesContents = file_get_contents( "http://api.steampowered.com/IDOTA2Match_570/GetLiveLeagueGames/V001/?language=en&key=" . WEBAPIKEY );
 	$mc->set( "live_games_contents", $liveGamesContents, 60 * 3 /* 3 minutes */ );
 }
 $data = json_decode( $liveGamesContents, true );
