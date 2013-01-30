@@ -1,4 +1,4 @@
-#Dota 2 WebAPI Examples#
+#![Logo](http://server.danieljennings.net/dota2_logo.png) Dota 2 WebAPI Examples ![Logo](http://server.danieljennings.net/dota2_logo.png)#
 
 WebAPI forum: http://dev.dota2.com/forumdisplay.php?f=411
 
