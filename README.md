@@ -2,10 +2,11 @@
 
 WebAPI forum: http://dev.dota2.com/forumdisplay.php?f=411
 
-<br>
+This GitHub repository serves as a home for source code samples that demonstrate how to use different parts of the Dota 2 WebAPI, and tie it in to other libraries and good practices, such as using Memcached to cache WebAPI results. These are specific examples that I've written in my free time using publicly available WebAPI methods to help give Dota 2 WebAPI newcomers starting points for projects that they might want to build.
 
+<br />
 
-###Example 1: Live League Game Signature Image###
+###Example 1: Live League Game Signature Image (live_league_signature.php)###
 
 This example is a feasible forum signature that will show forum-goers the currently-live league matches occuring on Dota 2 at the time. It will rotate through all of the live league games, giving each one 3.5 seconds of visibility before moving onto the next and wrapping back around to the first.
 
