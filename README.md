@@ -12,9 +12,10 @@ WebAPI forum: http://dev.dota2.com/forumdisplay.php?f=411
 *This image is an example of what the signature looks like, but is not live itself.*
 
 #####Requirements:#####
-* PHP5
-* ImageMagick for PHP5
-* Memcached for PHP5
+* A web server capable of serving PHP pages (e.g. http://httpd.apache.org/)
+* PHP5 (http://www.php.net)
+* ImageMagick for PHP5 (http://www.php.net/manual/en/imagick.installation.php)
+* Memcached for PHP5 (http://www.php.net/manual/en/memcached.installation.php)
 
 #####Demonstrates:#####
 * WebAPI: GetLeagueListing
